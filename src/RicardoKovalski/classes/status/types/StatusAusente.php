@@ -6,6 +6,6 @@ use \RicardoKovalski\classes\status\interfaces\ControladorInterface;
 class StatusAusente implements ControladorInterface{
 
 	public function getStatus(){
-		return "DESTINATARIO AUSENTE";
+		return "Destinatario ausente";
 	}
 }

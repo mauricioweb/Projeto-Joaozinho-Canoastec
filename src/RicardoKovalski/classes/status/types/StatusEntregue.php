@@ -6,6 +6,6 @@ use \RicardoKovalski\classes\status\interfaces\ControladorInterface;
 class StatusEntregue implements ControladorInterface{
 
 	public function getStatus(){
-		return "ENTREGUE";
+		return "Entregue";
 	}
 }
