@@ -8,6 +8,7 @@ use \RicardoKovalski\classes\status\types\StatusAusente as StatusAusente;
 use \RicardoKovalski\classes\status\types\StatusEntregue as StatusEntregue;
 use \RicardoKovalski\classes\status\types\StatusEnviado as StatusEnviado;
 use \RicardoKovalski\classes\status\types\StatusSeparacao as StatusSeparacao;
+use \RicardoKovalski\classes\status\types\StatusInvalido;
 
 class FactoryStatus{
 
@@ -34,7 +35,7 @@ class FactoryStatus{
 				return new StatusAusente();
 				break;
 			default:
-				return new StatusAguardando();
+				return new StatusInvalido();
 				break;
 		}
 	}

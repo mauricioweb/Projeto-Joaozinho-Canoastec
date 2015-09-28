@@ -3,9 +3,9 @@
 namespace RicardoKovalski\classes\status\types;
 use \RicardoKovalski\classes\status\interfaces\ControladorInterface;
 
-class StatusAusente implements ControladorInterface{
+class StatusInvalido implements ControladorInterface{
 
 	public function getStatus(){
-		return "Destinatário ausente";
+		return "Status inválido. Favor selecione um status.";
 	}
 }
