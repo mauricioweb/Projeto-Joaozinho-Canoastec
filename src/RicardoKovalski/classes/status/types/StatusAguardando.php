@@ -6,6 +6,6 @@ use \RicardoKovalski\classes\status\interfaces\ControladorInterface;
 class StatusAguardando implements ControladorInterface{
 
 	public function getStatus(){
-		return "Aguardando aprovacao";
+		return "Aguardando aprovação";
 	}
 }
