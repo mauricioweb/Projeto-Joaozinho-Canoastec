@@ -8,7 +8,7 @@ class ExampleTest extends PHPUnit_Framework_TestCase{
     public function testDeveRetornarStatusAguardandoAprovacao(){
 
         $statusAguandando = FactoryStatus::create('A');
-        $this->assertEquals("Aguardando aprovacao", $statusAguandando->getStatus());
+        $this->assertEquals("Aguardando aprovação", $statusAguandando->getStatus());
     }
 
     public function testDeveRetornarStatusAprovado(){
