@@ -6,6 +6,6 @@ use \RicardoKovalski\classes\status\interfaces\ControladorInterface;
 class StatusSeparacao implements ControladorInterface{
 
 	public function getStatus(){
-		return "Em separacao";
+		return "Em separação";
 	}
 }

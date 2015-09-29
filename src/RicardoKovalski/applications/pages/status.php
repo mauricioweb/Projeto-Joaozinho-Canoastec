@@ -7,7 +7,7 @@ use \RicardoKovalski\classes\status\factory\FactoryStatus;
 		if(isset($_POST['pesquisar'])){
 
 			$status = $_POST['status'];	
-
+			
 			$factoryStatus = FactoryStatus::create($status);
 		}
 		?>
@@ -29,7 +29,7 @@ use \RicardoKovalski\classes\status\factory\FactoryStatus;
 		</form>
 
 		<?php if(isset($_POST['pesquisar'])){ ?>
-		<div class="alert alert-success" role="alert">
+		<div class="<?php echo (!empty($status)) ? "alert alert-success" : "alert alert-warning"; ?>" role="alert">
 			<?php
 			echo $factoryStatus->getStatus();
 			?>
